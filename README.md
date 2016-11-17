@@ -19,6 +19,7 @@ This is a place for putting documentation the other developers may find useful w
 * Run
 ```
 cd mysql
-mysql -u root < create.sql`
+mysql -u root < create.sql
+mysql -u root < sampledata.sql
 ```
 
