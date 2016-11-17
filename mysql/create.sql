@@ -1,11 +1,11 @@
 -- Delete any existing database
-drop database if exists testdb;
+drop database if exists serveknox;
 
 -- Create a new database
-create database testdb;
+create database serveknox;
 
 -- Switch to it so we can create its tables
-use testdb;
+use serveknox;
 
 -- Create tables
 create table user (

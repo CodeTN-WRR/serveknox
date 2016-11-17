@@ -3,7 +3,7 @@
 	$servername = getenv('IP');
     $username = getenv('C9_USER');
     $password = "";
-    $database = "c9";
+    $database = "serveknox";
     $dbport = 3306;
 
 
