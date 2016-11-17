@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Yo!
    
    Colboy Smogth is a bully but ayden iz kool
@@ -7,29 +8,18 @@ XXX    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--,
     '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
     ----------------------------------------------------------------- 
+=======
+# ServeKnox README
+>>>>>>> 35a6433ec2b2b74fe9837351f28d9a1d92d87dde
 
+This is a place for putting documentation the other developers may find useful when working on the project.
 
-Hi there! Welcome to Cloud9 IDE!
-This is great !!
+## Front-end
 
-To get you started, we have created a small hello world application.
+## Back-end
 
-1) Open the hello-world.php file
+## Database
 
-2) Follow the run instructions in the file's comments
+* To make sure MySQL is running, run `mysql-ctl start`
+* Test by navigating to https://YOUR-WORKSPACE-NAME.c9users.io/test-database.php
 
-3) If you want to look at the Apache logs, check out ~/lib/apache2/log
-
-And that's all there is to it! Just have fun. Go ahead and edit the code, 
-or add new files. It's all up to you! 
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
-
-Edit by William.
