@@ -5,6 +5,7 @@
     use \Psr\Http\Message\ResponseInterface as Response;
     
     require 'vendor/autoload.php';
+    require 'database.php';
     
     $app = new \Slim\App(array(
     'debug' => true));
