@@ -5,7 +5,7 @@
     use \Psr\Http\Message\ResponseInterface as Response;
     
     require 'vendor/autoload.php';
-    require 'database.php';
+    //require 'database.php';
     
     $app = new \Slim\App(array(
     'debug' => true));
@@ -14,7 +14,7 @@
 
     $container['view'] = function ($container) {
         $view = new \Slim\Views\Twig('views', [
-            'cache' => 'false'
+            'cache' => false
         ]);
         
         // Instantiate and add Slim specific extension
@@ -25,7 +25,7 @@
     };
     
     $app->get('/', function ($request, $response) {
-        return $this->view->render($response, 'example.twig');
+        return $this->view->render($response, 'first-time-visitor.html');
     })->setName('profile');
     
     
