@@ -1,4 +1,20 @@
+<<<<<<< HEAD
+Yo!
+   
+   Colboy Smogth is a bully but ayden iz kool
+     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
+    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
+XXX    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
+    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
+     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
+    ----------------------------------------------------------------- 
+=======
 # ServeKnox README
+<<<<<<< HEAD
+>>>>>>> 35a6433ec2b2b74fe9837351f28d9a1d92d87dde
+
+=======
+>>>>>>> 9f2d702bc12da3ffcdd0ed5d6aec11585326b18b
 This is a place for putting documentation the other developers may find useful when working on the project.
 
 ## Front-end
@@ -19,6 +35,7 @@ This is a place for putting documentation the other developers may find useful w
 * Run
 ```
 cd mysql
-mysql -u root < create.sql`
+mysql -u root < create.sql
+mysql -u root < sampledata.sql
 ```
 
