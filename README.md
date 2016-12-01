@@ -39,3 +39,7 @@ mysql -u root < create.sql
 mysql -u root < sampledata.sql
 ```
 
+
+
+
+Possible Slim authentication library: https://packagist.org/packages/dyorg/slim-token-authentication
