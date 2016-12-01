@@ -28,6 +28,9 @@
         return $this->view->render($response, 'first-time-visitor.html');
     })->setName('profile');
     
+    $app->get('/org', function ($request, $response) {
+        return $this->view->render($response, 'create-acct-org.html');
+    })->setName('profile');
     
     
     
