@@ -25,7 +25,7 @@
     };
     
     $app->get('/', function ($request, $response) {
-        return $this->view->render($response, 'main.twig');
+        return $this->view->render($response, 'first-time-visitor.html');
     })->setName('profile');
     
     
