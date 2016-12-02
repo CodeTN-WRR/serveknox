@@ -1,0 +1,40 @@
+{% extends 'main.twig' %}
+
+{% block ind_link %}
+    <link rel="stylesheet" href="../views/css/home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+{% endblock ind_link %}
+
+{% block act_link %} 
+    class="is-active"
+{% endblock act_link %}
+
+{% block content %}
+    
+    <div class="row features">
+      <div class="medium-4 columns">
+        <div class="round-icon">
+          <span class="fi-widget"></span>
+        </div>
+        <h3>Adipiscing Elit</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra, lacus id interdum ultrices, elit metus semper tellus.</p>
+      </div>
+      <div class="medium-4 columns">
+        <div class="round-icon">
+          <span class="fi-graph-bar"></span>
+        </div>
+        <h3>Adipiscing Elit</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra, lacus id interdum ultrices, elit metus semper tellus.</p>
+      </div>
+      <div class="medium-4 columns">
+        <div class="round-icon">
+          <span class="fi-download"></span>
+        </div>
+        <h3>Adipiscing Elit</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra, lacus id interdum ultrices, elit metus semper tellus.</p>
+      </div>     
+    </div>
+{% endblock content %}

@@ -33,6 +33,14 @@
         return $this->view->render($response, 'org-home.html');
     });
     
+    $app->get('/dev', function ($request, $response) {
+        return $this->view->render($response, 'main.twig');
+    });
+    
+    $app->get('/dev/home', function ($request, $response) {
+        return $this->view->render($response, 'home.twig');
+    });
+    
     
     $app->get('/hello/{name}', function ($request, $response, $args) {
     return $this->view->render($response, 'profile.html', [
