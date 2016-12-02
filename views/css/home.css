@@ -33,3 +33,11 @@
         margin-bottom: 5rem; 
     } 
 }
+
+#jumbotron.row {
+    text-align: center;
+}
+
+.last {
+    margin-bottom: 2em;
+}
