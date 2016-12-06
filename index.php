@@ -24,6 +24,19 @@
         return $view;
     };
     
+    
+//AUTHENTICATION    
+    
+/*   $app->add(new \Slim\Middleware\JwtAuthentication([
+       "secret" => "signingsecret",
+       "path" => "/dev"
+    //    https://www.appelsiini.net/projects/slim-jwt-auth
+    //    temporary ^^^^^ final : "secret" => getenv("JWT_SECRET")
+    ]));
+*/    
+    
+//END AUTHENTICATION    
+
     $app->get('/', function ($request, $response) {
         return $this->view->render($response, 'first-time-visitor.html');
     })->setName('profile');
@@ -41,6 +54,9 @@
         return $this->view->render($response, 'home.twig');
     });
     
+    $app->get('/dev/login', function ($request, $response) {
+        return $this->view->render($response, 'login.php');
+    });
     
     $app->get('/hello/{name}', function ($request, $response, $args) {
     return $this->view->render($response, 'profile.html', [
