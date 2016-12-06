@@ -34,10 +34,20 @@
     } 
 }
 
+@media (max-width: 600px) {
+    .row {
+        text-align: center
+    }
+}
+
 #jumbotron.row {
     text-align: center;
 }
 
 .last {
     margin-bottom: 2em;
+}
+
+img, h4 {
+    margin: 1em;
 }

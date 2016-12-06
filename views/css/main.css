@@ -119,6 +119,7 @@ body, .header *, footer * {
     .header {
         margin-bottom: 0px;
         padding-bottom: 0px;
+        padding-top: 1rem;
     }
     
     .header-subnav {
