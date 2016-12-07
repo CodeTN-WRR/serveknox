@@ -41,6 +41,9 @@
         return $this->view->render($response, 'home.twig');
     });
     
+     $app->get('/dev/org', function ($request, $response) {
+        return $this->view->render($response, 'create-org-acc.twig');
+    });
     
     $app->get('/hello/{name}', function ($request, $response, $args) {
     return $this->view->render($response, 'profile.html', [

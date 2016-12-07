@@ -1,16 +1,6 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register your Organization</title>
-    <link rel="icon" href="img/logo.jpg">
-    <link rel="stylesheet" href="../foundation/css/foundation.css">
-    <link rel="stylesheet" href="../foundation/css/app.css">
-  </head>
-  <body>
-         
+{% extends "main.twig" %}
+{% block content %}
+<br>
       <form>
           <label style="margin-left:5%; margin-right:5%;">Organization Name:
         <input type="text" placeholder="Name of Organization">
@@ -97,5 +87,5 @@
     <script src="../foundation/js/vendor/what-input.js"></script>
     <script src="../foundation/js/vendor/foundation.js"></script>
     <script src="../foundation/js/app.js"></script>
-  </body>
-</html>
+    <br>
+{% endblock content %}
