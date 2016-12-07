@@ -49,12 +49,28 @@
         return $this->view->render($response, 'home.twig');
     });
     
+    $app->get('/dev/about', function ($request, $response) {
+        return $this->view->render($response, 'about.twig');
+    });
+    
+    $app->get('/dev/events', function ($request, $response) {
+        return $this->view->render($response, 'events.twig');
+    });
+    
+    $app->get('/dev/featured', function ($request, $response) {
+        return $this->view->render($response, 'featured.twig');
+    });
+    
     $app->get('/dev/login', function ($request, $response) {
         return $this->view->render($response, 'login.php');
     });
     
-     $app->get('/dev/org', function ($request, $response) {
+    $app->get('/dev/login/org', function ($request, $response) {
         return $this->view->render($response, 'create-org-acc.twig');
+    });
+    
+     $app->get('/dev/login/vol', function ($request, $response) {
+        return $this->view->render($response, 'create-vol-acc.twig');
     });
     
     $app->run();
