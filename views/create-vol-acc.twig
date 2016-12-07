@@ -1,4 +1,4 @@
-{% extends "main.twig" %}
+{% extends 'main.twig' %}
 {% block ind_link %}
 <title>Volunteer Account Creation</title>
 
@@ -8,11 +8,12 @@
 {% endblock ind_link %}
 {% block content %}
 <br>
-<h1>Organization Account Creation</h1>
+<h1>Volunteer Account Creation</h1>
       <form>
-          <label style="margin-left:5%; margin-right:5%;">Organization Name:
-        <input type="text" placeholder="Name of Organization">
-          </label >
+          <label style="margin-left:5%; margin-right:5%;">Your Name:
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name">
+         </label >
           <fieldset class="fieldset">
               <legend>Address</legend>
                   <label style="margin-left:5%; margin-right:5%;">Street:
