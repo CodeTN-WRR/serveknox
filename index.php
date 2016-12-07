@@ -42,7 +42,7 @@
     });
     
     $app->get('/dev', function ($request, $response) {
-        return $this->view->render($response, 'main.twig');
+        return $this->view->render($response, 'home.twig');
     });
     
     $app->get('/dev/home', function ($request, $response) {
