@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+{% block head %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServeKnox</title>
+    <link rel="icon" href="/views/img/logo.jpg">
+    <link rel="stylesheet" href="../foundation/css/foundation.css">
+    <link rel="stylesheet" href="../foundation/css/app.css">
+    <link rel="stylesheet" href="/views/css/main.css"> <!-- path must be absolute for slim to process it -->
+      
+{% block ind_link %}
+{% endblock ind_link %}    
+    
+  </head>
+{% endblock head %}
+  
+  <body>
+    <header class="header">
+      <h1 class="headline">ServeKnox</h1>
+      <h3 class="subtitle">A place where ideas find direction.</h2>
+      <ul class="header-subnav">
+        <li><a href="/dev"{% block act_link %} {% endblock act_link %} >Home</a></li>
+        <li><a href="/dev/login">Login</a></li>
+        <li><a href="/dev/about">About</a></li>
+        <li><a href="/dev/events">Events</a></li>
+        <li><a href="/dev/featured">Featured</a></li>
+      </ul>
+    </header>      
+      
+{% block content %}
+    <div id="main">
+        
+    </div>
+{% endblock content %}
+      
+{% block footer %}
+    <footer class="footer">
+      <div class="row">
+        <div class="small-12 columns">
+          <h2 class="slogan">ServeKnox</h2>
+          <p class="links">
+            <a href="#">Home</a>
+            <a href="#">Have a Service Idea?</a>
+            <a href="#">Get Involved</a>
+          </p>
+          <p class="copywrite">Copyright © 2016</p>
+        </div>
+      </div>
+    </footer>
+{% endblock footer %}
+
+  </body>
+</html> 

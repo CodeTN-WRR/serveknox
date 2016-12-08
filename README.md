@@ -1,34 +1,43 @@
+<<<<<<< HEAD
 Yo!
+   
+   Colboy Smogth is a bully but ayden iz kool
      ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
 XXX    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
     '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
     ----------------------------------------------------------------- 
-
+=======
+# ServeKnox README
 
 Hi there! Welcome to Cloud9 IDE!
 This is great !!
 my editgit
+=======
+## Front-end
 
-To get you started, we have created a small hello world application.
+## Back-end
 
-1) Open the hello-world.php file
+## Database
 
-2) Follow the run instructions in the file's comments
+### Get MySQL running
+* To make sure MySQL is running, run `mysql-ctl start`
+* Test by navigating to https://YOUR-WORKSPACE-NAME.c9users.io/test-database.php
 
-3) If you want to look at the Apache logs, check out ~/lib/apache2/log
+### Install phpMyAdmin
+* Run `phpmyadmin-ctl install`
+* Open it at https://YOUR-WORKSPACE-NAME.c9users.io/phpmyadmin/
 
-And that's all there is to it! Just have fun. Go ahead and edit the code, 
-or add new files. It's all up to you! 
+### Create database
+* Run
+```
+cd mysql
+mysql -u root < create.sql
+mysql -u root < sampledata.sql
+```
 
-Happy coding!
-The Cloud9 IDE team
 
 
-## Support & Documentation
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
-
-Edit by William.
+Possible Slim authentication library: https://packagist.org/packages/dyorg/slim-token-authentication
