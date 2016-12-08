@@ -1,0 +1,53 @@
+.features {
+  margin-top: 6rem; 
+}
+
+.features {
+  text-align: center; 
+}
+  
+.features hr {
+    width: 25%;
+    margin: 1rem auto; 
+}
+    
+.features .round-icon {
+    background-color: #E87E04;
+    border-radius: 50%;
+    display: table;
+    height: 100px;
+    margin: -61px auto 1rem;
+    width: 100px;
+    font-size: 3rem; 
+}
+    
+.features .round-icon span {
+      color: #fff;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; 
+}
+  
+@media only screen and (max-width: 40em) {
+    .features .columns {
+        margin-bottom: 5rem; 
+    } 
+}
+
+@media (max-width: 600px) {
+    .row {
+        text-align: center
+    }
+}
+
+#jumbotron.row {
+    text-align: center;
+}
+
+.last {
+    margin-bottom: 2em;
+}
+
+img, h4 {
+    margin: 1em;
+}

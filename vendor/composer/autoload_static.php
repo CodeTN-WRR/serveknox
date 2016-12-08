@@ -14,10 +14,12 @@ class ComposerStaticInitaae6a0be9e5c48d2d46727404b17e624
         'S' => 
         array (
             'Slim\\Views\\' => 11,
+            'Slim\\Middleware\\' => 16,
             'Slim\\' => 5,
         ),
         'P' => 
         array (
+            'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
         ),
         'I' => 
@@ -26,6 +28,7 @@ class ComposerStaticInitaae6a0be9e5c48d2d46727404b17e624
         ),
         'F' => 
         array (
+            'Firebase\\JWT\\' => 13,
             'FastRoute\\' => 10,
         ),
     );
@@ -35,9 +38,17 @@ class ComposerStaticInitaae6a0be9e5c48d2d46727404b17e624
         array (
             0 => __DIR__ . '/..' . '/slim/twig-view/src',
         ),
+        'Slim\\Middleware\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tuupola/slim-jwt-auth/src',
+        ),
         'Slim\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
         'Psr\\Http\\Message\\' => 
         array (
@@ -46,6 +57,10 @@ class ComposerStaticInitaae6a0be9e5c48d2d46727404b17e624
         'Interop\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
+        ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
         'FastRoute\\' => 
         array (

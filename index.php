@@ -24,21 +24,54 @@
         return $view;
     };
     
+    
+//AUTHENTICATION    
+    
+/*   $app->add(new \Slim\Middleware\JwtAuthentication([
+       "secret" => "signingsecret",
+       "path" => "/dev"
+    //    https://www.appelsiini.net/projects/slim-jwt-auth
+    //    temporary ^^^^^ final : "secret" => getenv("JWT_SECRET")
+    ]));
+*/    
+    
+//END AUTHENTICATION    
+
     $app->get('/', function ($request, $response) {
-        return $this->view->render($response, 'first-time-visitor.html');
-    })->setName('profile');
-    
-    
-    $app->get('/org', function ($request, $response) {
-        return $this->view->render($response, 'org-home.html');
+        return $this->view->render($response, 'main.twig');
     });
     
+    $app->get('/dev', function ($request, $response) {
+        return $this->view->render($response, 'home.twig');
+    });
     
-    $app->get('/hello/{name}', function ($request, $response, $args) {
-    return $this->view->render($response, 'profile.html', [
-        'name' => $args['name']
-    ]);
-    })->setName('profile');
+    $app->get('/dev/home', function ($request, $response) {
+        return $this->view->render($response, 'home.twig');
+    });
+    
+    $app->get('/dev/about', function ($request, $response) {
+        return $this->view->render($response, 'about.twig');
+    });
+    
+    $app->get('/dev/events', function ($request, $response) {
+        return $this->view->render($response, 'events.twig');
+    });
+    
+    $app->get('/dev/featured', function ($request, $response) {
+        return $this->view->render($response, 'featured.twig');
+    });
+    
+    $app->get('/dev/login', function ($request, $response) {
+        return $this->view->render($response, 'login.php');
+    });
+    
+    $app->get('/dev/login/org', function ($request, $response) {
+        return $this->view->render($response, 'create-org-acc.twig');
+    });
+    
+     $app->get('/dev/login/vol', function ($request, $response) {
+        return $this->view->render($response, 'create-vol-acc.twig');
+    });
     
     $app->run();
 
