@@ -1,16 +1,33 @@
 {% extends 'main.twig' %} 
+
+{% block ind_link %} 
+<link rel="stylesheet" href="../../foundation/css/foundation.css">
+    <link rel="stylesheet" href="../../foundation/css/app.css">
+    <link rel="stylesheet" href="/views/css/events.css">
+
+ {% endblock ind_link %} 
+ 
 {% block content %} 
+
+
 
 
   
         <div class="row"> 
         <div class="medium-12 columns">
           
-        <h1>Event of the Month</h1>
-        <img src="http://placehold.it/800x650&text=main image">
+        <h1>Event Name Goes Here</h1>
+        
          <h2>
-           Event Name Here
+           Event Organization
          </h2>
+         <h2>
+           Event Date
+         </h2>
+         
+         <div class="content-right">
+             <img src="http://placehold.it/350x400&text=main image">
+        </div>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac maximus ligula, id elementum enim. Donec faucibus nisl sapien, quis placerat diam pretium a. Morbi luctus malesuada lorem non aliquet. Donec sed massa fringilla augue consequat semper quis placerat mauris. Sed justo lectus, fermentum ac urna et, dictum porta magna. Suspendisse vehicula bibendum purus, et ullamcorper tellus ultricies et. Etiam suscipit placerat dolor, sed venenatis nisl tristique non.
 </p>
 <p>Suspendisse dictum nisi vitae urna ultrices malesuada. Ut tempus a nisl a dapibus. Aliquam semper eros nec rutrum sodales. Proin tristique vitae dui mattis ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec tincidunt bibendum lobortis. Proin bibendum nulla id varius iaculis. Quisque eu nisi ligula. In nulla odio, malesuada quis sagittis eget, elementum ac elit. Donec id iaculis augue, et faucibus arcu. Praesent at pretium quam, efficitur fringilla diam. Suspendisse urna orci, rutrum in ultricies at, viverra vel felis. Curabitur suscipit metus tortor. Pellentesque sit amet scelerisque turpis. Nunc vel rutrum turpis, ac tincidunt elit.
@@ -34,8 +51,6 @@
 
 
 {% endblock content %} 
-{% block ind_link %} 
 
- {% endblock ind_link %} 
  
  

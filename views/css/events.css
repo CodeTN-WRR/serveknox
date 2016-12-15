@@ -6,3 +6,11 @@
 #total {
     text-align: center;
 }
+
+
+/* Event Detail Page */
+.content-right {
+    float: right;
+    padding: 0 0 0 16px;
+    
+}
