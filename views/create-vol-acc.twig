@@ -1,25 +1,40 @@
 {% extends 'main.twig' %}
 {% block ind_link %}
-<title>Volunteer Account Creation</title>
-
+<title>Create Account</title>
+    <link rel="stylesheet" href="../../views/css/create-account.css">
     <link rel="stylesheet" href="../../foundation/css/foundation.css">
     <link rel="stylesheet" href="../../foundation/css/app.css">
 
 {% endblock ind_link %}
 {% block content %}
-<br>
-<h1>Volunteer Account Creation</h1>
+<div class="create-account">
+<h1 style="margin-left:5%;">Account Creation</h1>
+    <fieldset style="margin-left:5%;">
+      <legend>This is going to be a(n):</legend>
+      <input type="radio" name="pokemon" value="vol" id="vol" required><label for="vol">Volunteer Account</label>
+      <input type="radio" name="pokemon" value="org" id="org"><label for="org">Organization Account</label>
+    
+    <label  style="margin-right:5%">Organization name:
+    <input type="text" placeholder="Organization Name" aria-describedby="exampleHelpText">
+  </label>
+    </fieldset>
       <form>
-          <label style="margin-left:5%; margin-right:5%;">Your Name:
+        <label style="margin-left:5%; margin-right:5%;">Your Name:
         <input type="text" placeholder="First name">
         <input type="text" placeholder="Last name">
          </label >
-          <fieldset class="fieldset">
-              <legend>Address</legend>
+         <label style="margin-left:5%; margin-right:5%;">E-mail Address:
+        <input type="text" placeholder="E-mail">
+          </label>
+          <label style="margin-left:5%; margin-right:5%;">Description: 
+        <input type="text" placeholder="Description">
+          </label>
+          <fieldset  style="border: none;">
+              
                   <label style="margin-left:5%; margin-right:5%;">Street:
-                    <input type="text" placeholder="Street Address">
+                    <input type="text" placeholder="1234 Maple Lane">
                   <label>Zip Code:</label>
-                    <input type="text" placeholder="Zip Code">
+                    <input type="text" placeholder="12345">
                   </label>
                     <label style="margin-left:5%; margin-right:5%;">State:
                       <select>
@@ -81,20 +96,14 @@
                   </label>
           
           </fieldset>
-          <label style="margin-left:5%; margin-right:5%;">Leader's Name:
-        <input type="text" placeholder="Leader">
-          </label>
-          <label style="margin-left:5%; margin-right:5%;">Description: 
-        <input type="text" placeholder="Description">
-          </label>
+
         <button style="margin-left:5%; margin-right:15px;" type="submit" class ="success button">Submit</button>
         <button type="submit" class ="alert button">Cancel</button>
         
       </form>
-
+</div>
     <script src="../foundation/js/vendor/jquery.js"></script>
     <script src="../foundation/js/vendor/what-input.js"></script>
     <script src="../foundation/js/vendor/foundation.js"></script>
     <script src="../foundation/js/app.js"></script>
-    <br>
 {% endblock content %}

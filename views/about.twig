@@ -1,7 +1,7 @@
 {% extends 'main.twig' %} 
 {% block content %} 
 
-<link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css'
+<link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' 
 rel='stylesheet' type='text/css'>
 
 <div class="off-canvas-wrap move-right" data-offcanvas>
@@ -40,7 +40,7 @@ rel='stylesheet' type='text/css'>
     <!-- main content goes here -->
     <header class="row">
       <div class="small-12 columns">
-        <h1 class="text-center">Off-canvas Sidebar</h1>
+        <h1 class="text-center">About Us</h1>
       </div>
     </header>
     
@@ -52,9 +52,12 @@ rel='stylesheet' type='text/css'>
       
       <div class="medium-6 medium-pull-6 columns">
         
-        <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
-        <button>Read On</button>
-        <button>Buy Me</button>
+        <p>Our Vision – Inspire students to get involved in positive initiatives
+        and encourage the celebration of service work in the community of Knoxville. 
+        Our Mission – Raise awareness of the positive student initiatives in the Knoxville Area 
+        and encourage, empower, and help students get involved in these positive initiatives.
+        </p>
+      
       </div>
       
     </div>
@@ -66,7 +69,7 @@ rel='stylesheet' type='text/css'>
       </div>
       
       <div class="medium-6 columns">
-        <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
+        <p> content </p>
         <button>Read On</button>
         <button>Buy Me</button>
       </div>
@@ -112,7 +115,20 @@ rel='stylesheet' type='text/css'>
 
 {% endblock content %} 
 {% block ind_link %} 
+   <script>function sideNav() {
+  if ($(window).width() < 769) {
+    $('.off-canvas-wrap').removeClass('move-right');
+    $('.left-off-canvas-toggle').show();
+  } else {
+    $('.off-canvas-wrap').addClass('move-right');
+    $('.left-off-canvas-toggle').hide();
+  }  
+}
 
- {% endblock ind_link %} 
+$(window).resize(function() {
+  sideNav();
+});
+sss</script>
+{% endblock ind_link %} 
  
  
