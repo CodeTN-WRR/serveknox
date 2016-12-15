@@ -3,6 +3,7 @@
     // PHP Request and Response Objects
     use \Psr\Http\Message\ServerRequestInterface as Request;
     use \Psr\Http\Message\ResponseInterface as Response;
+    use \Firebase\JWT\JWT;
     
     require 'vendor/autoload.php';
     //require 'database.php';
@@ -25,15 +26,13 @@
     };
     
     
-//AUTHENTICATION    
-    
-/*   $app->add(new \Slim\Middleware\JwtAuthentication([
+   $app->add(new \Slim\Middleware\JwtAuthentication([
        "secret" => "signingsecret",
-       "path" => "/dev"
+       "cookie" => "serveknox",
+       "path" => ["/dev/login/org", "/dev/login/vol"] 
     //    https://www.appelsiini.net/projects/slim-jwt-auth
     //    temporary ^^^^^ final : "secret" => getenv("JWT_SECRET")
     ]));
-*/    
     
 //END AUTHENTICATION    
 
@@ -61,9 +60,10 @@
         return $this->view->render($response, 'featured.twig');
     });
     
-    $app->get('/dev/login', function ($request, $response) {
-        return $this->view->render($response, 'login.php');
-    });
+    //$app->get('/dev/login', function ($request, $response) {
+        //return $this->view->($response, 'login.php');
+        //return $app->render('login.php');
+    //});
     
     $app->get('/dev/login/org', function ($request, $response) {
         return $this->view->render($response, 'create-org-acc.twig');
