@@ -1,0 +1,18 @@
+.create-account label {
+   color: black;
+   font-family:Arial;
+}
+
+.create-account {
+   border-style: inset;
+   border-color: #95a5a6;
+   margin-left: 2em;
+   margin-right: 2em;
+   color: white;
+   font-family:Arial;
+   background-color: #95a5a6;
+   margin-top: .5em;
+   margin-bottom: .5em;
+   border-bottom: outset;
+   border-right: outset;
+}
