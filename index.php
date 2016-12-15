@@ -69,6 +69,10 @@
         return $this->view->render($response, 'create-org-acc.twig');
     });
     
+    $app->get('/dev/login/vol', function ($request, $response) {
+        return $this->view->render($response, 'create-vol-acc.twig');
+    });
+    
     $app->get('/dev/events/det', function ($request, $response) {
         return $this->view->render($response, 'event-detail.twig');
     }); 
