@@ -6,7 +6,7 @@
     use \Firebase\JWT\JWT;
     
     require 'vendor/autoload.php';
-    //require 'database.php';
+    require 'database.php';
     
     $app = new \Slim\App(array(
     'debug' => true));
@@ -52,10 +52,11 @@
         return $this->view->render($response, 'about.twig');
     });
     
-    $app->get('/dev/events', function ($request, $response) {
-        return $this->view->render($response, 'events.twig');
+    $app->get('/dev/events', function ($request, $response) use ($app, $events) {
+        $response = $this->view->render($response, "events.twig", ["events" => $events]);
+        return $response;
     });
-    
+
     $app->get('/dev/featured', function ($request, $response) {
         return $this->view->render($response, 'featured.twig');
     });
