@@ -14,6 +14,12 @@ create table user (
     username VARCHAR(64),
     passwordhash VARCHAR(64)
     );
+    
+create table event (
+    eventdate DATE,
+    eventname VARCHAR(64),
+    eventphoto VARCHAR(64)
+);    
 
 
     

@@ -19,5 +19,18 @@
 		echo "</div>";
 		die();
 	}
+	
+	try {
+		$results = $db->query("SELECT * FROM event ORDER BY eventdate DESC;");
+		$events = $results->fetchAll(PDO::FETCH_ASSOC);
+		
+	} catch (Exception $e) {
+		echo "<h1 style='text-align: center; color: red; text-decoration: underline'>";
+		echo "Failed Query.";
+		echo "</h1>";
+		echo "<div style='margin: auto; max-width: 40%; border: 2px solid black; background-color: #b30000; color: white; border-radius: 5px'>";
+		echo "</div>";
+		die();
+	}
 
 ?>

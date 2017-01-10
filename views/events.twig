@@ -31,54 +31,23 @@
  
  
     <!-- Thumbnails -->
- 
-        <div id="main-cont" class="large-8 columns">
+    
+    {% for event in events %}
+		
+			<div id="main-cont" class="large-8 columns">
           <div class="row">
  
             <div class="large-4 small-6 columns">
-              <img src="http://placehold.it/1000x1000&text=Thumbnail">
+              <img src="{{event["eventphoto"]}}">
  
               <div class="panel">
-                <h5>Event Name</h5>
-                <h6 class="subheader">MM/DD/YY</h6>
+                <h5>{{event["eventname"]}}</h5>
+                <h6 class="subheader">{{event["eventdate"]}}</h6>
               </div>
-            </div>
+      </div>
+			
+			{% endfor %}
  
-            <div class="large-4 small-6 columns">
-              <img src="http://placehold.it/500x500&text=Thumbnail">
- 
-              <div class="panel">
-                <h5>Event Name</h5>
-                <h6 class="subheader">MM/DD/YY</h6>
-              </div>
-            </div>
- 
-            <div class="large-4 small-6 columns">
-              <img src="http://placehold.it/500x500&text=Thumbnail">
- 
-              <div class="panel">
-                <h5>Event Name</h5>
-                <h6 class="subheader">MM/DD/YY</h6>
-              </div>
-            </div>
- 
-            <div class="large-4 small-6 columns">
-              <img src="http://placehold.it/500x500&text=Thumbnail">
- 
-              <div class="panel">
-                <h5>Event Name</h5>
-                <h6 class="subheader">MM/DD/YY</h6>
-              </div>
-            </div>
- 
-            <div class="large-4 small-6 columns">
-              <img src="http://placehold.it/500x500&text=Thumbnail">
- 
-              <div class="panel">
-                <h5>Event Name</h5>
-                <h6 class="subheader">MM/DD/YY</h6>
-              </div>
-            </div>
  
             <div class="large-4 small-6 columns">
               <img src="http://placehold.it/500x500&text=Thumbnail">
